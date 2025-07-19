@@ -1,0 +1,5 @@
+- hosts: default
+  tasks:
+    - name: verify connection ansible server
+      ping:
+        data: connection established
