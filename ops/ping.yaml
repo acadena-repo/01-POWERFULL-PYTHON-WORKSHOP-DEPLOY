@@ -1,4 +1,5 @@
 - hosts: default
+  gather_facts: no
   tasks:
     - name: verify connection ansible server
       ping:

@@ -1,3 +1,4 @@
 .vagrant/
 .venv/
 ops/ansible_hosts
+ops/add.keys
