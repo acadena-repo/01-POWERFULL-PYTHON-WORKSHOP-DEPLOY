@@ -1,3 +1,3 @@
 .vagrant/
 .venv/
-ansible_hosts
+ops/ansible_hosts
