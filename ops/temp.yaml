@@ -1,0 +1,8 @@
+- hosts: default
+  name: temporal
+  gather_facts: no
+  become: true
+  tasks:
+    - name: install caddy
+      apt:
+        name: caddy

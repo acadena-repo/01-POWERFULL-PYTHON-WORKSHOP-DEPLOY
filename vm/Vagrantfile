@@ -4,9 +4,12 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-24.04"
   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = '../ops/ping.yaml'
+    ansible.playbook = '../ops/temp.yaml'
+  end  
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = '../ops/update.yaml'
   end
   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "../ops/update.yaml"
+    ansible.playbook = "../ops/main.yaml"
   end
 end
